@@ -30,7 +30,6 @@ def plantsToWater(plants, dayN):
 
     return wateringList
 
-# PlantList -> String
 def formatMessage(waterList):
     return "Please water the following plants today:\n" + '\n'.join(waterList)
 
@@ -38,9 +37,6 @@ waterList = plantsToWater(plants,dayN)
 message = formatMessage(waterList)
 
 
-
-# Your Account Sid and Auth Token from twilio.com/console
-# DANGER! This is insecure. See http://twil.io/secure
 account_sid = os.getenv('account_sid')
 auth_token = os.getenv('auth_token')
 client = Client(account_sid, auth_token)
